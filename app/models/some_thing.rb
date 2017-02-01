@@ -1,0 +1,2 @@
+class SomeThing < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class Typo < ApplicationRecord
+end
