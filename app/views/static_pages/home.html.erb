@@ -1,2 +1,45 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+<title>Welcome</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<h2 class="w3-center w3-red" style="width:100%">Word's to live by!</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://i.pinimg.com/736x/a2/07/e0/a207e02f366f6281bc0bcc75accb8a4e--lol-so-true-motivational-thoughts.jpg" style="width:100%">
+  <img class="mySlides" src="https://everydaypowerblog.com/wp-content/uploads/2014/07/Famous-Quotes-by-Famous-People-5.jpg" style="width:100%">
+  <img class="mySlides" src="https://i.pinimg.com/736x/dd/f3/d5/ddf3d5f2184df26d3749b6088ef8ebae--king-jr-nuest-jr.jpg" style="width:100%">
+  <img class="mySlides" src="https://everydaypowerblog.com/wp-content/uploads/2014/07/Famous-Quotes-by-Famous-People-8.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<h1 class="w3-center">Read all about quotes</h1>
+<p class= "w3-center">Lorem ipsum dolor sit amet, adipisci maiestatis cum ei. Nihil dolor offendit ne vis, sed vide salutandi moderatius ex, ea viderer habemus nam. Fuisset iracundia appellantur duo cu. Mazim molestie perpetua an qui, pri te aeterno nostrum intellegebat. In tractatos quaerendum quo. Te virtute salutandi intellegam vix, aliquid referrentur ex sea, has at erat tation. Mei ea quot vivendo liberavisse, cu nam aeterno salutandi molestiae.
+</p>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

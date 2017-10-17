@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  seasons: 1
+  content: MyString
 
 two:
   name: MyString
-  seasons: 1
+  content: MyString

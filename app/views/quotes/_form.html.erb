@@ -1,10 +1,10 @@
-<%= form_for(player) do |f| %>
-  <% if player.errors.any? %>
+<%= form_for(quote) do |f| %>
+  <% if quote.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(player.errors.count, "error") %> prohibited this player from being saved:</h2>
+      <h2><%= pluralize(quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
 
       <ul>
-      <% player.errors.full_messages.each do |message| %>
+      <% quote.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -17,8 +17,8 @@
   </div>
 
   <div class="form-group">
-    <%= f.label :seasons %>
-    <%= f.number_field :seasons , class:"form-control" %>
+    <%= f.label :content %>
+    <%= f.text_field :content , class:"form-control" %>
   </div>
 
   <div class="actions">
